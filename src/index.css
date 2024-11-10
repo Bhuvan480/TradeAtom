@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root,
+.app{
+    height: 100%;
+    width: 100%;
+    font-family:'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+
+.child-styles > div > h2 > button {
+    @apply py-3 !important; /* Example: apply Tailwind's py-3 */
+  }
+
+.app{
+    /* background-image: url('./assets/bg-trade-atom2.jpg'); */
+    background-position: right; /* Adjust position if needed */
+    background-size: cover; /* Ensures the image covers the area */
+    background-repeat: repeat-y; /* Repeat the image vertically */
+    height: 100vh; /* Ensures the container takes full viewport height */
+    overflow-y: auto; /* Allow vertical scrolling */
+}
